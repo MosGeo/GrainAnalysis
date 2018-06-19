@@ -1,4 +1,4 @@
-function [grainPack] = binarizeAndSave(grainDirectoryName, mainDirectory)
+function [grains] = loadGrains(grainDirectoryName, mainDirectory)
 
 if exist('mainDirectory', 'var') == false; mainDirectory = ''; end
 stlDirectoryName = '';
@@ -26,7 +26,6 @@ grainRotation = [cell2num(dataArray{rotationColumns(1)}) cell2num(dataArray{rota
 grainScale = [cell2num(dataArray{scaleColumns(1)}) cell2num(dataArray{scaleColumns(2)}) cell2num(dataArray{scaleColumns(3)})];
 clear nameColumn positionColumns rotationColumns scaleColumns formatSpec fileID resultsFileName dataArray
 
-
 % LOAD GRAINS
 grains(nGrains) = Grain(nGrains);
 tic
@@ -48,14 +47,14 @@ clear selectedGrainName ind vertices faces normals grainPosition grainRotation g
 toc
 
 % CREATE GRAIN PACK
-grainPack = GrainPack(grains);
-grainPack.createBinaryGrainPack(.03);
-im = grainPack.extractSubVolume(.05,.05,[.05 .1]);
+%grainPack = GrainPack(grains);
+%grainPack.createBinaryGrainPack(.03);
+%im = grainPack.extractSubVolume(.05,.05,[.05 .1]);
 %grainPack.resetSubVolume();
 %grainPack.visulize3D();
 %stackFileName = [grainDirectory '\Image Stack\GrainPack'];
 %grainPack.saveBinaryImageStack(stackFileName, 1);
-grainPackFileName = fullfile(grainDirectory, [grainDirectoryName, '_grainPack.mat']);
-save (grainPackFileName, 'grainPack')
+%grainPackFileName = fullfile(grainDirectory, [grainDirectoryName, '_grainPack.mat']);
+%save (grainPackFileName, 'grainPack')
 
 end
