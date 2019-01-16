@@ -1,3 +1,10 @@
+stlTools 
+version 1.1.0.0 (1.58 MB) by Pau Micó 
+This is a collection of functions, samples and demos to illustrate how to deal with STL files
+
+https://www.mathworks.com/matlabcentral/fileexchange/51200-stltools
+
+=======================================================
 The 'stlTools' toolbox is a collection of functions, samples and demos to illustrate how to deal with STL files. Some of them are contributions published in Matlab Central and properly referenced here.
 This toolbox contains the following files:
 

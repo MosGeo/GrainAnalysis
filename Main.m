@@ -32,6 +32,3 @@ bwImageFull = grainPack.fullBinaryImage;   % Not cropped
 % Reset the cropping
 grainPack.resetSubVolume();
 
-
-
-
