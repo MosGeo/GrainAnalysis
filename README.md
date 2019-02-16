@@ -1,7 +1,6 @@
-# Grain Pack Analyzer: A companion to Particula
+# Grain Pack Analyzer: A companion to Particula 
 
-This is some companion functions for Particula (https://github.com/MosGeo/ParticlePack) although it can be used seperatly if the you have the right data.
+This repository has been deprecated and all functionalities have been merged with Particula (https://github.com/MosGeo/ParticlePack)
 
-Please see the "main" function for example of usage and instructions. 
 
 
